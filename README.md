@@ -1,6 +1,6 @@
 # cisTopic on 10X 5k PBMCs dataset
 
-cisTopic is an R/Bioconductor package for the simulataneous identification of cis-regulatory topics and cell states from single cell epigenomics data. cisTopic relies on an algorithm called Latent Dirichlet Allocation (LDA), a robust Bayesian method used in text mining to group documents addressing similar topics and related words into topics. Interestingly, this model has a series of assumptions that are fulfilled in single-cell epigenomics data, such as non-ordered features (‘bag of words’) and the allowance of overlapping topics (i.e. a regulatory region can be co-accessible with different other regions depending on the context, namely, the cell type or state).
+cisTopic (Bravo González-Blas *et al.*, 2019) is an R/Bioconductor package for the simulataneous identification of cis-regulatory topics and cell states from single cell epigenomics data. cisTopic relies on an algorithm called Latent Dirichlet Allocation (LDA), a robust Bayesian method used in text mining to group documents addressing similar topics and related words into topics. Interestingly, this model has a series of assumptions that are fulfilled in single-cell epigenomics data, such as non-ordered features (‘bag of words’) and the allowance of overlapping topics (i.e. a regulatory region can be co-accessible with different other regions depending on the context, namely, the cell type or state).
 
 ![alt text](https://github.com/dagousket/winter_school_2021/blob/master/tutorial/cistopic.png?raw=true)
 
