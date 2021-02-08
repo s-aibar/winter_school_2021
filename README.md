@@ -9,9 +9,13 @@ In this tutorial, we will use a publicly available [10X dataset](https://support
 The analysis of this dataset will be decomposed into 5 parts :
 
 1- running the LDA algorithm on the raw count data
+
 2- analysing the cell-topic contribution matrix
+
 3- analysing the region-topic contribution matrix
+
 4- analysisng the region-cell predicitive matrix
+
 5- export to loom file
 
 ![alt text](https://github.com/dagousket/winter_school_2021/blob/master/tutorial/cistopic_ws.001.png?raw=true)
