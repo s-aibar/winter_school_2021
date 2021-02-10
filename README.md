@@ -14,3 +14,6 @@ SCENIC will  be run through [VSN](https://github.com/vib-singlecell-nf), a Nextf
 The scATAC analysis will be performed using the R package [cisTopic](https://github.com/aertslab/cisTopic). This package comprises a dimensionality reduction analysis based on Latent Dirichlet Allocation algorithm (LDA), which enables to probabilistically assign each cell and each genomic location to a "topic". Topics correspond to global or cell-type specific trends in the dataset, which will be used as latent variables for dimensionality reduction analysis (t-SNE, UMAP, clustering). In a second part, the tutorial will focus on the exploration of the obtained topics, notably the enrichment of ChIP-seq signatures and transcription binding motifs for individual topics.
 
 The analysis will be performed in R using a Jupyter environment.
+
+SCope session with anlaysis on complete datasets can be found here : https://scope.aertslab.org/#/qlife_winter_school/*/welcome
+
