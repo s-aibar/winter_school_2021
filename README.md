@@ -1,7 +1,7 @@
 ## Single cell transcriptomics, Gene regulatory networks and identification of cell states in space and time through single-cell transcriptomics and epigenomics (SCENIC, cisTopic)
 
 
-![alt text](https://github.com/dagousket/winter_school_2021/blob/master/image.png?raw=true)
+![alt text](https://github.com/dagousket/winter_school_2021/blob/master/image_scenic_citopic.png?raw=true)
 
 ### Workshop overview
 
