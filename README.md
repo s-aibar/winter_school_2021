@@ -1,21 +1,14 @@
-# cisTopic on 10X 5k PBMCs dataset
+## Single cell transcriptomics, Gene regulatory networks and identification of cell states in space and time through single-cell transcriptomics and epigenomics (SCENIC, cisTopic)
 
-cisTopic (Bravo González-Blas *et al.*, 2019) is an R/Bioconductor package for the simulataneous identification of cis-regulatory topics and cell states from single cell epigenomics data. cisTopic relies on an algorithm called Latent Dirichlet Allocation (LDA), a robust Bayesian method used in text mining to group documents addressing similar topics and related words into topics. Interestingly, this model has a series of assumptions that are fulfilled in single-cell epigenomics data, such as non-ordered features (‘bag of words’) and the allowance of overlapping topics (i.e. a regulatory region can be co-accessible with different other regions depending on the context, namely, the cell type or state).
 
-![alt text](https://github.com/dagousket/winter_school_2021/blob/master/tutorial/cistopic.png?raw=true)
+### Workshop overview
 
-In this tutorial, we will use a publicly available [10X dataset](https://support.10xgenomics.com/single-cell-atac/datasets/1.0.1/atac_v1_pbmc_5k) on peripheral blood mononuclear cells (PBMCs), consisting of scATAC-seq data from 5335 cells. This data has been pre-processed using cellRanger to provide a count matrix where rows correspond to cell barcodes and columns correspond to ATAC-seq peak genomic regions. The count inside this sparse matrix correspond to the number of non-duplicated fragment present in each cell within each genomic region. In addition cellRanger provide a metrics.csv file, summarising quality-check measures on a per-cell basis. Importantly, this file include information on which cell barcodes have been considered as real cell to creat the count matrix.
+This workshop will be focused on inferring gene regulatory networks (GRNs) from single-cell RNA-seq and single-cell ATAC-seq data. The workshop will be split into two parts, one with each technology, both using the Peripheral blood mononuclear cells (PBMC) dataset from 10x genomics as a tutorial example.
 
-The analysis of this dataset will be decomposed into 5 parts :
+To infer Gene Regulatory Networks from scRNA we will use [SCENIC](https://github.com/aertslab/SCENIC). SCENIC uses a random forest approach to link Transcription Factor (TFs) to their target genes based on gene expression co-variability across cells. By incorporation motif enrichment information, SCENIC further prunes the TF-target links (i.e. regulons) based on the presence of the TF binding motif in the cis-regulatory regions of the target genes. To identify cell states based on the activity of the network, it further calculates an activity score for each regulon based on the target genes expression level ranking in each cell.
 
-1- running the LDA algorithm on the raw count data
+SCENIC will  be run through [VSN](https://github.com/vib-singlecell-nf), a Nextflow processing pipeline which also includes quality-check process to filter good quality cells and is followed by standard dimensionality reduction analysis (t-SNE, UMAP, clustering, marker genes). The exploration of the obtained regulons and scores will be performed in R using a Jupyter environment, and the web-based visualization tool [SCope](https://scope.aertslab.org).
 
-2- analysing the cell-topic contribution matrix
+The scATAC analysis will be performed using the R package [cisTopic](https://github.com/aertslab/cisTopic). This package comprises a dimensionality reduction analysis based on Latent Dirichlet Allocation algorithm (LDA), which enables to probabilistically assign each cell and each genomic location to a "topic". Topics correspond to global or cell-type specific trends in the dataset, which will be used as latent variables for dimensionality reduction analysis (t-SNE, UMAP, clustering). In a second part, the tutorial will focus on the exploration of the obtained topics, notably the enrichment of ChIP-seq signatures and transcription binding motifs for individual topics.
 
-3- analysing the region-topic contribution matrix
-
-4- analysisng the region-cell predicitive matrix
-
-5- export to loom file
-
-![alt text](https://github.com/dagousket/winter_school_2021/blob/master/tutorial/cistopic_ws.001.png?raw=true)
+The analysis will be performed in R using a Jupyter environment.
