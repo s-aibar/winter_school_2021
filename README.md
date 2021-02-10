@@ -1,6 +1,8 @@
 ## Single cell transcriptomics, Gene regulatory networks and identification of cell states in space and time through single-cell transcriptomics and epigenomics (SCENIC, cisTopic)
 
 
+![alt text](https://github.com/dagousket/winter_school_2021/blob/master/image.png?raw=true)
+
 ### Workshop overview
 
 This workshop will be focused on inferring gene regulatory networks (GRNs) from single-cell RNA-seq and single-cell ATAC-seq data. The workshop will be split into two parts, one with each technology, both using the Peripheral blood mononuclear cells (PBMC) dataset from 10x genomics as a tutorial example.
