@@ -17,3 +17,7 @@ The analysis will be performed in R using a Jupyter environment.
 
 SCope session with anlaysis on complete datasets can be found here : https://scope.aertslab.org/#/qlife_winter_school/*/welcome
 
+Html preview of the tutorials:
+- [GRNs-SCENIC_Notebook_1_Running_VSN.html](https://rawcdn.githack.com/dagousket/winter_school_2021/69fb5aaa6a2cb6c0503caf76734bd0316b722f40/tutorial/GRNs_SCENIC/GRNs-SCENIC_Notebook_1_Running_VSN.html)
+- [GRNs-SCENIC_Notebook_2_Exploring_output.html](https://rawcdn.githack.com/dagousket/winter_school_2021/69fb5aaa6a2cb6c0503caf76734bd0316b722f40/tutorial/GRNs_SCENIC/GRNs-SCENIC_Notebook_2_Exploring_output.html)
+- [cistopic_tutorial_5kPBMC.html](https://rawcdn.githack.com/dagousket/winter_school_2021/83d5bc8d1885773128a425d0eeeda486bc61f954/tutorial/cisTopic/cistopic_tutorial_5kPBMC.html)
